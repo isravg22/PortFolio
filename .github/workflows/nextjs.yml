@@ -17,9 +17,6 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: ./PortFolio
 
     steps:
       - name: Checkout
@@ -27,6 +24,7 @@ jobs:
 
       - name: Detect package manager
         id: detect-package-manager
+        working-directory: PortFolio
         run: |
           if [ -f "yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
@@ -55,24 +53,27 @@ jobs:
       - name: Restore cache
         uses: actions/cache@v4
         with:
-          path: .next/cache
+          path: PortFolio/.next/cache
           key: ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-${{ hashFiles('**.[jt]s', '**.[jt]sx') }}
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json', '**/yarn.lock') }}-
 
       - name: Install dependencies
+        working-directory: PortFolio
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
 
       - name: Build with Next.js
+        working-directory: PortFolio
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Export static site
+        working-directory: PortFolio
         run: ${{ steps.detect-package-manager.outputs.runner }} next export
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: ./PortFolio/out
+          path: PortFolio/out
 
   deploy:
     environment:
