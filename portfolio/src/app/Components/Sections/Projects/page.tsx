@@ -1,6 +1,6 @@
 'use client';
 
-import ImageCarousel from "../ImageCarousel/page";
+import ImageCarousel from '../../ImageCarousel';
 
 interface ProjectImage {
     src: string;
