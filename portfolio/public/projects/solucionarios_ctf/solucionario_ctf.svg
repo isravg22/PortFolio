@@ -1,0 +1,129 @@
+<!-- filepath: c:\Users\Israel\Desktop\Desarrollo\PortFolio\portfolio\public\projects\solucionarios_ctf\ctf-banner.svg -->
+<svg width="600" height="300" viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradientes -->
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#1e293b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#334155;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="terminalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#000000;stop-opacity:0.9" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:0.9" />
+    </linearGradient>
+    
+    <linearGradient id="flagGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ef4444;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f97316;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#eab308;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Filtros y efectos -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+  
+  <!-- Fondo principal -->
+  <rect width="600" height="300" fill="url(#bgGradient)"/>
+  
+  <!-- Patrones de circuitos en el fondo -->
+  <g opacity="0.1">
+    <path d="M50 50 L100 50 L100 80 L150 80" stroke="#00ff41" stroke-width="2" fill="none"/>
+    <path d="M200 40 L250 40 L250 70 L300 70 L300 100" stroke="#00ff41" stroke-width="2" fill="none"/>
+    <path d="M400 60 L450 60 L450 90 L500 90" stroke="#00ff41" stroke-width="2" fill="none"/>
+    <circle cx="100" cy="80" r="3" fill="#00ff41"/>
+    <circle cx="250" cy="70" r="3" fill="#00ff41"/>
+    <circle cx="450" cy="90" r="3" fill="#00ff41"/>
+  </g>
+  
+  <!-- Terminal principal -->
+  <rect x="50" y="80" width="280" height="160" rx="8" fill="url(#terminalGradient)" filter="url(#shadow)"/>
+  
+  <!-- Barra superior del terminal -->
+  <rect x="50" y="80" width="280" height="25" rx="8" fill="#2d3748"/>
+  <rect x="50" y="97" width="280" height="8" fill="#2d3748"/>
+  
+  <!-- Botones del terminal -->
+  <circle cx="68" cy="92" r="4" fill="#ef4444"/>
+  <circle cx="83" cy="92" r="4" fill="#f59e0b"/>
+  <circle cx="98" cy="92" r="4" fill="#10b981"/>
+  
+  <!-- Título del terminal -->
+  <text x="120" y="97" font-family="monospace" font-size="11" fill="#e2e8f0">root@kali:~# ctf_solver</text>
+  
+  <!-- Contenido del terminal -->
+  <text x="60" y="125" font-family="monospace" font-size="10" fill="#00ff41">$ nmap -sV target.ctf</text>
+  <text x="60" y="140" font-family="monospace" font-size="10" fill="#e2e8f0">PORT     STATE SERVICE VERSION</text>
+  <text x="60" y="155" font-family="monospace" font-size="10" fill="#e2e8f0">22/tcp   open  ssh     OpenSSH 7.4</text>
+  <text x="60" y="170" font-family="monospace" font-size="10" fill="#e2e8f0">80/tcp   open  http    Apache 2.4.6</text>
+  <text x="60" y="185" font-family="monospace" font-size="10" fill="#00ff41">$ searchsploit apache 2.4.6</text>
+  <text x="60" y="200" font-family="monospace" font-size="10" fill="#f59e0b">Exploit found! CVE-2021-41773</text>
+  <text x="60" y="215" font-family="monospace" font-size="10" fill="#00ff41">$ python3 exploit.py</text>
+  <text x="60" y="230" font-family="monospace" font-size="10" fill="#ef4444">[+] Shell obtained!</text>
+  
+  <!-- Cursor parpadeante -->
+  <rect x="155" y="225" width="8" height="12" fill="#00ff41">
+    <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+  </rect>
+  
+  <!-- Bandera CTF -->
+  <g transform="translate(370, 90)">
+    <!-- Asta de la bandera -->
+    <rect x="0" y="0" width="4" height="120" fill="#64748b"/>
+    
+    <!-- Bandera -->
+    <path d="M8 10 L140 10 L125 35 L140 60 L8 60 Z" fill="url(#flagGradient)" filter="url(#shadow)"/>
+    
+    <!-- Texto en la bandera -->
+    <text x="25" y="30" font-family="monospace" font-weight="bold" font-size="12" fill="#1a1a1a">FLAG{</text>
+    <text x="25" y="45" font-family="monospace" font-weight="bold" font-size="12" fill="#1a1a1a">capture_me}</text>
+  </g>
+  
+  <!-- Iconos de herramientas CTF -->
+  <g transform="translate(380, 140)" opacity="0.8">
+    <!-- Icono de llave (criptografía) -->
+    <g transform="translate(0, 0)">
+      <path d="M15 8a4 4 0 0 0-4-4 4 4 0 0 0-4 4 4 4 0 0 0 4 4c.75 0 1.438-.22 2.031-.563L16 14.5l1.5-1.5-2.969-2.969A3.978 3.978 0 0 0 15 8z M11 10a2 2 0 1 1 0-4 2 2 0 0 1 0 4z" fill="#fbbf24"/>
+    </g>
+    
+    <!-- Icono de red -->
+    <g transform="translate(40, 0)">
+      <circle cx="6" cy="6" r="3" fill="none" stroke="#06d6a0" stroke-width="2"/>
+      <circle cx="18" cy="6" r="3" fill="none" stroke="#06d6a0" stroke-width="2"/>
+      <circle cx="6" cy="18" r="3" fill="none" stroke="#06d6a0" stroke-width="2"/>
+      <circle cx="18" cy="18" r="3" fill="none" stroke="#06d6a0" stroke-width="2"/>
+      <path d="m9 9 6 0 m-6 6 6 0 m-9-6 6 6 m6-6-6 6" stroke="#06d6a0" stroke-width="2"/>
+    </g>
+    
+    <!-- Icono de escudo -->
+    <g transform="translate(80, 0)">
+      <path d="M12 2C13.1 2 14 2.9 14 4V8C14 10.2 13.1 12 12 12S10 10.2 10 8V4C10 2.9 10.9 2 12 2M21 11H15L13.5 7.5C13.1 6.6 12.1 6 11 6S8.9 6.6 8.5 7.5L7 11H1C0.4 11 0 11.4 0 12S0.4 13 1 13H7L8.5 16.5C8.9 17.4 9.9 18 11 18S13.1 17.4 13.5 16.5L15 13H21C21.6 13 22 12.6 22 12S21.6 11 21 11Z" fill="#ef4444"/>
+    </g>
+  </g>
+  
+  <!-- Título principal -->
+  <text x="300" y="50" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#f1f5f9" text-anchor="middle" filter="url(#glow)">SOLUCIONARIOS</text>
+  <text x="300" y="75" font-family="Arial, sans-serif" font-weight="bold" font-size="28" fill="#00ff41" text-anchor="middle" filter="url(#glow)">CTF</text>
+  
+  <!-- Elementos decorativos de código -->
+  <g transform="translate(400, 200)" opacity="0.6">
+    <text font-family="monospace" font-size="8" fill="#64748b">01001000 01100001</text>
+    <text x="0" y="12" font-family="monospace" font-size="8" fill="#64748b">01100011 01101011</text>
+  </g>
+  
+  <!-- Líneas de conexión decorativas -->
+  <g opacity="0.3">
+    <line x1="350" y1="150" x2="380" y2="180" stroke="#00ff41" stroke-width="1" stroke-dasharray="5,5"/>
+    <line x1="420" y1="170" x2="450" y2="200" stroke="#00ff41" stroke-width="1" stroke-dasharray="5,5"/>
+  </g>
+</svg>

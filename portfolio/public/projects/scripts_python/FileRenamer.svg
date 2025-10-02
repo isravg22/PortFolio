@@ -1,0 +1,61 @@
+<!-- filepath: c:\Users\Israel\Desktop\Desarrollo\PortFolio\portfolio\public\projects\scripts_python\file-renamer.svg -->
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="terminalBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0c0c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo del terminal -->
+  <rect width="800" height="500" rx="8" fill="url(#terminalBg2)"/>
+  
+  <!-- Barra superior del terminal -->
+  <rect x="0" y="0" width="800" height="35" rx="8" fill="#2d3748"/>
+  <rect x="0" y="27" width="800" height="8" fill="#2d3748"/>
+  
+  <!-- Botones del terminal -->
+  <circle cx="20" cy="17" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="17" r="6" fill="#f59e0b"/>
+  <circle cx="70" cy="17" r="6" fill="#10b981"/>
+  
+  <!-- Título del terminal -->
+  <text x="400" y="23" font-family="monospace" font-size="14" fill="#e2e8f0" text-anchor="middle">Bulk File Renamer - bulk_renamer.py</text>
+  
+  <!-- Contenido del terminal -->
+  <g font-family="Consolas, monospace" font-size="12">
+    <text x="20" y="65" fill="#00ff41">┌──(kali㉿python-scripts)-[~/file_tools]</text>
+    <text x="20" y="80" fill="#00ff41">└─$ python3 bulk_renamer.py</text>
+    
+    <text x="20" y="110" fill="#93c5fd">╔══════════════════════════════════════════════════════════════════════╗</text>
+    <text x="20" y="125" fill="#93c5fd">║                    📁 BULK FILE RENAMER v3.0                        ║</text>
+    <text x="20" y="140" fill="#93c5fd">║              Pattern-Based File Renaming Tool                       ║</text>
+    <text x="20" y="155" fill="#93c5fd">╚══════════════════════════════════════════════════════════════════════╝</text>
+    
+    <text x="20" y="185" fill="#e2e8f0">Directory: /home/user/documents/photos</text>
+    <text x="20" y="200" fill="#e2e8f0">Files found: 15</text>
+    
+    <text x="20" y="230" fill="#fbbf24">Pattern: IMG_*.jpg → Photo_YYYY_MM_DD_*.jpg</text>
+    
+    <text x="20" y="260" fill="#e2e8f0">Processing files:</text>
+    <text x="20" y="280" fill="#10b981">✓ IMG_001.jpg → Photo_2024_01_15_001.jpg</text>
+    <text x="20" y="295" fill="#10b981">✓ IMG_002.jpg → Photo_2024_01_15_002.jpg</text>
+    <text x="20" y="310" fill="#10b981">✓ IMG_003.jpg → Photo_2024_01_15_003.jpg</text>
+    <text x="20" y="325" fill="#10b981">✓ IMG_004.jpg → Photo_2024_01_15_004.jpg</text>
+    <text x="20" y="340" fill="#10b981">✓ IMG_005.jpg → Photo_2024_01_15_005.jpg</text>
+    <text x="20" y="355" fill="#94a3b8">  ... (10 more files)</text>
+    
+    <text x="20" y="385" fill="#06d6a0">━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━</text>
+    <text x="20" y="405" fill="#06d6a0">✅ OPERATION COMPLETED SUCCESSFULLY!</text>
+    <text x="20" y="420" fill="#e2e8f0">   • Files processed: 15/15</text>
+    <text x="20" y="435" fill="#e2e8f0">   • Renamed successfully: 15</text>
+    <text x="20" y="450" fill="#e2e8f0">   • Errors: 0</text>
+    
+    <text x="20" y="480" fill="#00ff41">└─$ _</text>
+    
+    <!-- Cursor parpadeante -->
+    <rect x="50" y="473" width="8" height="14" fill="#00ff41">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

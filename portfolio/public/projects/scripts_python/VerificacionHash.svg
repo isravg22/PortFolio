@@ -1,0 +1,71 @@
+<!-- filepath: c:\Users\Israel\Desktop\Desarrollo\PortFolio\portfolio\public\projects\scripts_python\hash-verification.svg -->
+<svg width="800" height="500" viewBox="0 0 800 500" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradientes para el terminal -->
+    <linearGradient id="terminalBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0c0c0c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1a1a;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Fondo del terminal -->
+  <rect width="800" height="500" rx="8" fill="url(#terminalBg)"/>
+  
+  <!-- Barra superior del terminal -->
+  <rect x="0" y="0" width="800" height="35" rx="8" fill="#2d3748"/>
+  <rect x="0" y="27" width="800" height="8" fill="#2d3748"/>
+  
+  <!-- Botones del terminal -->
+  <circle cx="20" cy="17" r="6" fill="#ef4444"/>
+  <circle cx="45" cy="17" r="6" fill="#f59e0b"/>
+  <circle cx="70" cy="17" r="6" fill="#10b981"/>
+  
+  <!-- Título del terminal -->
+  <text x="400" y="23" font-family="monospace" font-size="14" fill="#e2e8f0" text-anchor="middle">Hash Verification Tool - hash_verifier.py</text>
+  
+  <!-- Contenido del terminal -->
+  <g font-family="Consolas, monospace" font-size="12">
+    <!-- Prompt inicial -->
+    <text x="20" y="65" fill="#00ff41">┌──(kali㉿python-scripts)-[~/hash_tools]</text>
+    <text x="20" y="80" fill="#00ff41">└─$ python3 hash_verifier.py</text>
+    
+    <text x="20" y="110" fill="#93c5fd">╔══════════════════════════════════════════════════════════════════════╗</text>
+    <text x="20" y="125" fill="#93c5fd">║                    🔐 HASH VERIFICATION TOOL v2.1                   ║</text>
+    <text x="20" y="140" fill="#93c5fd">║              MD5 / SHA1 / SHA256 / SHA512 Analyzer                  ║</text>
+    <text x="20" y="155" fill="#93c5fd">╚══════════════════════════════════════════════════════════════════════╝</text>
+    
+    <text x="20" y="185" fill="#e2e8f0">[1] Verify single hash</text>
+    <text x="20" y="200" fill="#e2e8f0">[2] Batch hash verification</text>
+    <text x="20" y="215" fill="#e2e8f0">[3] Hash algorithm detection</text>
+    <text x="20" y="230" fill="#e2e8f0">[4] Exit</text>
+    
+    <text x="20" y="260" fill="#00ff41">Select option: 1</text>
+    
+    <text x="20" y="290" fill="#e2e8f0">Enter hash to verify:</text>
+    <text x="20" y="305" fill="#fbbf24">5d41402abc4b2a76b9719d911017c592</text>
+    
+    <text x="20" y="335" fill="#e2e8f0">Enter original text (optional):</text>
+    <text x="20" y="350" fill="#fbbf24">hello</text>
+    
+    <text x="20" y="380" fill="#10b981">✓ HASH VERIFICATION SUCCESSFUL!</text>
+    <text x="20" y="395" fill="#e2e8f0">  Algorithm detected: MD5</text>
+    <text x="20" y="410" fill="#e2e8f0">  Input hash:  5d41402abc4b2a76b9719d911017c592</text>
+    <text x="20" y="425" fill="#e2e8f0">  Computed:    5d41402abc4b2a76b9719d911017c592</text>
+    <text x="20" y="440" fill="#e2e8f0">  Original text: "hello"</text>
+    
+    <text x="20" y="470" fill="#00ff41">└─$ _</text>
+    
+    <!-- Cursor parpadeante -->
+    <rect x="50" y="463" width="8" height="14" fill="#00ff41">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+</svg>

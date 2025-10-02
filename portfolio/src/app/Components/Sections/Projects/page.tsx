@@ -27,7 +27,7 @@ export default function Projects() {
             description: 'Es una tienda que vende productos tecnologicos. Además cuenta con dos lados tanto el lado para el cliente que sería la tienda y para el lado de la empresa que puede ver las compras, el stock, los trabajadores y tiene un dashboard con estadísticas.',
             technologies: ['Next.js', 'TypeScript', 'Spring Boot', 'Java', 'MySQL', 'Stripe'],
             images: [
-                { src: '/projects/bytech/home.svg', alt: 'ByTech - Página principal' },
+                { src: '/projects/bytech/bytech.svg', alt: 'ByTech - Página principal' },
                 { src: '/next.svg', alt: 'ByTech - Dashboard (placeholder)' },
                 { src: '/vercel.svg', alt: 'ByTech - Funcionalidades (placeholder)' },
                 { src: '/file.svg', alt: 'ByTech - Responsive Design (placeholder)' },
@@ -37,26 +37,25 @@ export default function Projects() {
         {
             id: 2,
             title: 'Scripts Python',
-            description: 'Varios Scripts de python que hacen una automatización de tareas. Como puede ser la verificación de hashes y para renombrar los archivos.',
-            technologies: ['Python'],
+            description: 'Colección de scripts automatizados en Python para optimización de tareas de seguridad y gestión de archivos: Verificación y análisis de hashes MD5/SHA256. Renombrado masivo de archivos con patrones personalizados. Comparación de hashes con diccionarios de contraseñas',
+            technologies: ['Python', 'Hashlib', 'OS Module', 'Regex', 'File Management'],
             images: [
-                { src: '/projects/scripts_python/python-modern.svg', alt: 'scripts_python - Vista principal' },
-                { src: '/projects/scripts_python/projects.png', alt: 'scripts_python - Sección proyectos' },
-                { src: '/projects/scripts_python/contact.png', alt: 'scripts_python - Contacto' },
+                { src: '/projects/scripts_python/python-modern.svg', alt: 'Scripts Python - Interfaz principal' },
+                { src: '/projects/scripts_python/VerificacionHash.svg', alt: 'Scripts Python - Verificación de hashes' },
+                { src: '/projects/scripts_python/FileRenamer.svg', alt: 'Scripts Python - Renombrador de archivos' },
+                { src: '/projects/scripts_python/BruteForce.svg', alt: 'Scripts Python - Comparador de hashes' },
             ],
             githubUrl: 'https://github.com/isravg22/Scripts_Python',
-
         },
         {
             id: 3,
             title: 'Solucionarios CTF',
-            description: 'Soluciones de CTF.',
+            description: 'Soluciones de CTF de la página TryHackMe.',
             technologies: ['NMAP', 'SMBCLIENT', 'NETCAT', 'SEARCHSPLOIT', 'SHELL', 'HYDRA', 'JOHN THE RIPPER', 'SSH', 'METASPLOIT'],
             images: [
-                { src: '/projects/ecommerce/catalog.png', alt: 'E-commerce - Catálogo' },
-                { src: '/projects/ecommerce/cart.png', alt: 'E-commerce - Carrito' },
+                { src: '/projects/solucionarios_ctf/solucionario_ctf.svg', alt: 'Solucionarios CTF - Solucionario' },
             ],
-            githubUrl: '#'
+            githubUrl: 'https://github.com/isravg22/Solucionarios-CTF'
         },
     ];
 
