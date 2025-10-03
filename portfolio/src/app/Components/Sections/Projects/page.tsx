@@ -27,10 +27,17 @@ export default function Projects() {
             description: 'Es una tienda que vende productos tecnologicos. Además cuenta con dos lados tanto el lado para el cliente que sería la tienda y para el lado de la empresa que puede ver las compras, el stock, los trabajadores y tiene un dashboard con estadísticas.',
             technologies: ['Next.js', 'TypeScript', 'Spring Boot', 'Java', 'MySQL', 'Stripe'],
             images: [
-                { src: '/projects/bytech/bytech.svg', alt: 'ByTech - Página principal' },
-                { src: '/next.svg', alt: 'ByTech - Dashboard (placeholder)' },
-                { src: '/vercel.svg', alt: 'ByTech - Funcionalidades (placeholder)' },
-                { src: '/file.svg', alt: 'ByTech - Responsive Design (placeholder)' },
+                { src: '/projects/bytech/bytech.svg', alt: 'ByTech' },
+                { src: '/projects/bytech/bytech_1.png', alt: 'ByTech' },
+                { src: '/projects/bytech/bytech_2.png', alt: 'ByTech' },
+                { src: '/projects/bytech/bytech_3.png', alt: 'ByTech' },
+                { src: '/projects/bytech/bytech_4.png', alt: 'ByTech' },
+                { src: '/projects/bytech/bytech_5.png', alt: 'ByTech' },
+                { src: '/projects/bytech/bytech_6.png', alt: 'ByTech' },
+                { src: '/projects/bytech/bytech_7.png', alt: 'ByTech' },
+                { src: '/projects/bytech/bytech_8.png', alt: 'ByTech' },
+                { src: '/projects/bytech/bytech_9.png', alt: 'ByTech' },
+                { src: '/projects/bytech/bytech_10.png', alt: 'ByTech' }
             ],
             githubUrl: 'https://github.com/isravg22/ByTech'
         },
